@@ -128,7 +128,7 @@ async def start_pm(client, message: Message, _):
         await baby.edit_text(f"**❖ ɴᴏᴡ sᴛᴀʀᴛᴇᴅ..**")
         await baby.delete()
 
-        await message.reply_photo(photo=config.START_IMG_URL,
+        await message.reply_video(video=config.START_IMG_URL,
             caption=_["start_2"].format(message.from_user.mention, app.mention),
             reply_markup=InlineKeyboardMarkup(out),
         )
