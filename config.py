@@ -8,27 +8,28 @@ load_dotenv()
 # ________________________________________________________________________________#
 # Get this value from my.telegram.org/apps
 
-API_ID = int(getenv("API_ID"))
+API_ID = int(getenv("API_ID", ""))
 # ________________________________________________________________________________#
-API_HASH = getenv("API_HASH")
+API_HASH = getenv("API_HASH", "")
 # Get your token from @BotFather on Telegram.
 # ________________________________________________________________________________#
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "")
 # ________________________________________________________________________________#
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "")
 # ________________________________________________________________________________#
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 16000))
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 # ________________________________________________________________________________#
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID",))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1002043570167"))
 # ________________________________________________________________________________#
 # Get this value from  on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID"))
+OWNER_ID = int(getenv("OWNER_ID", "7131351568"))
 # --------------------------------------------------------
 BOT_USERNAME = getenv("BOT_USERNAME" , "BABY_MUSIC09_BOT")
 # --------------------------------------------------------
 BOT_NAME = getenv("BOT_NAME" , "╼⃝𖠁 𝐁ʌʙʏ ꭙ 𝐌ᴜsɪᴄ 𖠁⃝╾")
+OWNER_USERNAME = getenv("OWNER_USERNAME", "UTTAM470")
 # ________________________________________________________________________________#
 # Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -38,15 +39,16 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 # ________________________________________________________________________________#
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/GARIB-CODERS/WARRIORUTTAM",
+    "https://github.com/QYIOPLMGJFDGH/SANATANI_MUSIC",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 # ________________________________________________________________________________#
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/+s07wBV78TFczZjU9")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+M8HL6_ej0w0zODI1")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/BABY09_WORLD")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+OL6jdTL7JAJjYzVl")
+OWNER_USERNAME = getenv("OWNER_USERNAME" , "UTTAM470")
 # ________________________________________________________________________________#
 # Set this to True if you want the assistant to automatically leave chats
 # after an interval
