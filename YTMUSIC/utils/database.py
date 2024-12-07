@@ -46,6 +46,20 @@ skipmode = {}
 playlist = []
 
 
+async def is_muted(chat_id: int) -> bool:
+    mode = mute.get(chat_id)
+    if not mode:
+        return False
+    return mode
+
+
+async def mute_on(chat_id: int):
+    mute[chat_id] = True
+
+
+async def mute_off(chat_id: int):
+    mute[chat_id] = False
+    
 
 #connect 
 async def connect_to_chat(user_id: int, chat_id: int):
