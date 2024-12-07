@@ -15,7 +15,7 @@ from config import (
     lyrical,
 )
 from YTMUSIC import Platform, app
-from YTMUSIC.core.call import Yukki
+from YTMUSIC.core.call import YT
 from YTMUSIC.misc import SUDOERS, db
 from YTMUSIC.utils import seconds_to_min, time_to_seconds
 from YTMUSIC.utils.channelplay import get_channeplayCB
