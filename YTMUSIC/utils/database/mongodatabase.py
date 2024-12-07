@@ -29,6 +29,15 @@ playlist = []
 
 # Playlist
 
+async def get_upvote_count(chat_id: int) -> int:
+    mode = count.get(chat_id)
+    if not mode:
+        mode = await countdb.find_one({"chat_id": chat_id})
+        if not mode:
+            return 5
+        count[chat_id] = mode["mode"]
+        return mode["mode"]
+    return mode
 
 async def _get_playlists(chat_id: int) -> Dict[str, int]:
     _notes = await playlistdb.find_one({"chat_id": chat_id})
