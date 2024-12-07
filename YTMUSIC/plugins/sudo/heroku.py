@@ -28,7 +28,7 @@ import config
 from config import BANNED_USERS
 from strings import command
 from YTMUSIC import app
-from YTMUSIC.core.call import Yukki
+from YTMUSIC.core.call import YT
 from YTMUSIC.misc import HAPP, SUDOERS, XCB, db
 from YTMUSIC.utils.database import (
     get_active_chats,
