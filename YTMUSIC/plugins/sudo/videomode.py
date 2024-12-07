@@ -12,10 +12,10 @@ from pyrogram.types import Message
 
 import config
 from strings import command
-from YukkiMusic import app
-from YukkiMusic.misc import SUDOERS
-from YukkiMusic.utils.database import add_off, add_on
-from YukkiMusic.utils.decorators.language import language
+from YTMUSIC import app
+from YTMUSIC.misc import SUDOERS
+from YTMUSIC.utils.database import add_off, add_on
+from YTMUSIC.utils.decorators.language import language
 
 
 @app.on_message(command("VIDEOMODE_COMMAND") & SUDOERS)
