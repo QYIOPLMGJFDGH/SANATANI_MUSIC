@@ -13,10 +13,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS, MONGO_DB_URI, OWNER_ID
 from strings import command
-from YukkiMusic import app
-from YukkiMusic.misc import SUDOERS
-from YukkiMusic.utils.database import add_sudo, remove_sudo
-from YukkiMusic.utils.decorators.language import language
+from YTMUSIC import app
+from YTMUSIC.misc import SUDOERS
+from YTMUSIC.utils.database import add_sudo, remove_sudo
+from YTMUSIC.utils.decorators.language import language
 
 
 @app.on_message(command("ADDSUDO_COMMAND") & filters.user(OWNER_ID))
