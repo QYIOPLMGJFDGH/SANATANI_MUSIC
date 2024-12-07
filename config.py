@@ -89,7 +89,7 @@ STRING5 = getenv("STRING_SESSION5", None)
 #    | |\ \          | |  | |       / /_ | | |__| |____) |_| || |____  | | \ \| |__| | | |
 #    |_| \_\         |_|  |_|      |____||_|\____/|_____/|_____\_____| |_|  \_\\____/  |_|
 
-
+TEMP_DB_FOLDER = "tempdb"
 BANNED_USERS = filters.user()
 adminlist = {}
 lyrical = {}
