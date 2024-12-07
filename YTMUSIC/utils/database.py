@@ -52,7 +52,9 @@ async def is_muted(chat_id: int) -> bool:
         return False
     return mode
 
-
+async def is_commanddelete_on(chat_id: int) -> bool:
+    return chat_id not in command
+    
 async def mute_on(chat_id: int):
     mute[chat_id] = True
 
