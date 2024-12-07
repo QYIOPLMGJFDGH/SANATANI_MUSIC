@@ -11,9 +11,9 @@
 from pyrogram.types import Message
 
 from strings import get_string, command
-from YukkiMusic import app
-from YukkiMusic.misc import SUDOERS
-from YukkiMusic.utils.database import (
+from YTMUSIC import app
+from YTMUSIC.misc import SUDOERS
+from YTMUSIC.utils.database import (
     get_lang,
     is_maintenance,
     maintenance_off,
