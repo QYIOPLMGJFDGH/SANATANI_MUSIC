@@ -6,7 +6,7 @@ from pyrogram.types import InlineKeyboardMarkup
 
 import config
 from YTMUSIC import Platform, app
-from YTMUSIC.core.call import Yukki
+from YTMUSIC.core.call import YT
 from YTMUSIC.misc import db
 from YTMUSIC.utils.database import (
     add_active_video_chat,
