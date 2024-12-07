@@ -328,7 +328,7 @@ async def set_playmode(chat_id: int, mode: str):
 
 
 async def get_lang(chat_id: int) -> str:
-    mode = langm.get(chat_id)
+    mode = range.get(chat_id)
     if not mode:
         lang = await langdb.find_one({"chat_id": chat_id})
         if not lang:
