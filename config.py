@@ -36,6 +36,9 @@ OWNER_USERNAME = getenv("OWNER_USERNAME", "UTTAM470")
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # Get it from http://dashboard.heroku.com/account
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
+PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", "False")
+
+
 # ________________________________________________________________________________#
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
