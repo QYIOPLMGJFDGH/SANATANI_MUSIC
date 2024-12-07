@@ -33,15 +33,7 @@ from YTMUSIC.utils.database import (
 from YTMUSIC.utils.decorators import ActualAdminCB
 from YTMUSIC.utils.decorators.language import languageCB
 from YTMUSIC.utils.formatters import seconds_to_min
-from YTMUSIC.utils.inline.play import (
-    livestream_markup,
-    panel_markup_1,
-    panel_markup_2,
-    panel_markup_3,
-    slider_markup,
-    stream_markup,
-    telegram_markup,
-)
+
 from YTMUSIC.utils.stream.autoclear import auto_clean
 from YTMUSIC.utils.stream.stream import stream
 from YTMUSIC.utils.thumbnails import get_thumb
