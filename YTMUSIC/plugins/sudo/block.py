@@ -12,10 +12,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import command
-from YukkiMusic import app
-from YukkiMusic.misc import SUDOERS
-from YukkiMusic.utils.database import add_gban_user, remove_gban_user
-from YukkiMusic.utils.decorators.language import language
+from YTMUSIC import app
+from YTMUSIC.misc import SUDOERS
+from YTMUSIC.utils.database import add_gban_user, remove_gban_user
+from YTMUSIC.utils.decorators.language import language
 
 
 @app.on_message(command("BLOCK_COMMAND") & SUDOERS)
