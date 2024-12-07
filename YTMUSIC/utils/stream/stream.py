@@ -16,7 +16,7 @@ from YTMUSIC.utils.database import (
 from YTMUSIC.utils.exceptions import AssistantErr
 from YTMUSIC.utils.inline.play import stream_markup, telegram_markup
 from YTMUSIC.utils.inline.playlist import close_markup
-from YTMUSIC.utils.pastebin import Yukkibin
+from YTMUSIC.utils.pastebin import YTBin
 from YTMUSIC.utils.stream.queue import put_queue, put_queue_index
 from YTMUSIC.utils.thumbnails import get_qthumb, get_thumb
 
