@@ -17,12 +17,7 @@ api = SafoneAPI()
 userbot = Userbot()
 
 
-from .platforms import *
+from .platforms import PlaTForms
 
-Apple = AppleAPI()
-Carbon = CarbonAPI()
-SoundCloud = SoundAPI()
-Spotify = SpotifyAPI()
-Resso = RessoAPI()
-Telegram = TeleAPI()
-YouTube = YouTubeAPI()
+Platform = PlaTForms()
+HELPABLE = {}
