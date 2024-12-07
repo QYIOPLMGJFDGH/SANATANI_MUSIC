@@ -332,7 +332,7 @@ async def get_lang(chat_id: int) -> str:
     # range.get(chat_id) की बजाय langm.get(chat_id) का उपयोग करें
     mode = langm.get(chat_id)  # सही डिक्शनरी का उपयोग करें
     if not mode:
-        lang = await langdb.find_one({"chat_id": chat_id})
+        lang = await langm.find_one({"chat_id": chat_id})
         if not lang:
             langm[chat_id] = "en"
             return "en"
