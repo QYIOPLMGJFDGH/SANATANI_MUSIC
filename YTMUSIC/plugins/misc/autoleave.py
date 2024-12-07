@@ -6,7 +6,7 @@ from pyrogram.enums import ChatType
 import config
 from strings import get_string
 from YTMUSIC import app
-from YTMUSIC.core.call import Yukki
+from YTMUSIC.core.call import YT
 from YTMUSIC.utils.database import (
     get_assistant,
     get_client,
