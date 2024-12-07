@@ -11,10 +11,10 @@
 from pyrogram.types import Message
 
 from strings import command
-from YukkiMusic import app
-from YukkiMusic.misc import SUDOERS
-from YukkiMusic.utils.database import set_video_limit
-from YukkiMusic.utils.decorators.language import language
+from YTMUSIC import app
+from YTMUSIC.misc import SUDOERS
+from YTMUSIC.utils.database import set_video_limit
+from YTMUSIC.utils.decorators.language import language
 
 
 @app.on_message(command("VIDEOLIMIT_COMMAND") & SUDOERS)
