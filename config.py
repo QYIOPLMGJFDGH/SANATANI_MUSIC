@@ -80,6 +80,8 @@ STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
+STRING_SESSIONS = list(map(str.strip, getenv("STRING_SESSIONS", "BQD7IGgAXdPk-f_fQqDkvebAVZE_lADEe10Ho6X5ri91jYNt8rPwCFS8OY1T1Iy1YvJmIwN_ITNcrwP09pCg7GSw1JaMwFb8Y-47FKs7kLQJP_8b6ZSCO9W3EYQ8fBOWU12xg42nlUTn3o8Cg1ajMDlj-Lr9Al3r7op-XnMh5LFsSglUWn-dHxo8SZHDM6OWlFeJt_BqYkKrZMT9Ev5_-Y7cAtFoQEqNShQUcIl8kUhCDvsp11c-uFQd9WfxcsOpdWhfeaIhggp3LJyBCw88OOZ2jlOkc4tUcTs64LZgiz3Tai4B3cQEkfCDYDXqC_Z96TSutbOkYoCZPuYUZeYC_GMMIuoPNAAAAAHR7uM4AA").split(",")))
+
 
 
 #     _    __      _______ _____    ___  __ _    _  _____ _____ _____   __
