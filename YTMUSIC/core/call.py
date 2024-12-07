@@ -24,7 +24,7 @@ from pytgcalls.types import StreamAudioEnded
 
 import config
 from strings import get_string
-from YTMUSIC import LOGGER, Platforms, app, userbot
+from YTMUSIC import LOGGER, Platform, app, userbot
 from YTMUSIC.misc import db
 from YTMUSIC.utils.database import (
     add_active_chat,
