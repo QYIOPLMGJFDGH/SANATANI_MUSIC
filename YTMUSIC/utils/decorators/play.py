@@ -7,7 +7,7 @@ from config import PLAYLIST_IMG_URL, PRIVATE_BOT_MODE
 from config import adminlist
 from strings import get_string
 from YTMUSIC import Platform, app
-from YTMUSIC.core.call import Yukki
+from YTMUSIC.core.call import YT
 from YTMUSIC.misc import SUDOERS
 from YTMUSIC.utils.database import (
     get_assistant,
