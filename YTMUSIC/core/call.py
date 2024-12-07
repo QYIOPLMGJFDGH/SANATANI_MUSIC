@@ -42,7 +42,7 @@ from YTMUSIC.utils.database import (
 from YTMUSIC.utils.exceptions import AssistantErr
 from YTMUSIC.utils.inline.play import stream_markup, telegram_markup
 from YTMUSIC.utils.stream.autoclear import auto_clean
-from YTMUSIC.utils.thumbnails import gen_thumb
+from YTMUSIC.utils.thumbnails import get_thumb
 
 from pyrogram.errors import (
     ChannelsTooMuch,
