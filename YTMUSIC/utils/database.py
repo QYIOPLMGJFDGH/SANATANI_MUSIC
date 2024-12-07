@@ -52,6 +52,12 @@ async def is_muted(chat_id: int) -> bool:
         return False
     return mode
 
+async def is_served_private_chat(chat_id: int) -> bool:
+    chat = await privatedb.find_one({"chat_id": chat_id})
+    if not chat:
+        return False
+    return True
+    
 async def is_commanddelete_on(chat_id: int) -> bool:
     return chat_id not in command
     
