@@ -16,6 +16,7 @@ blockeddb = mongodb.blockedusers
 privatedb = mongodb.privatechats
 
 playlist = []
+langm = {}
 
 
 #connect 
@@ -328,7 +329,8 @@ async def set_playmode(chat_id: int, mode: str):
 
 
 async def get_lang(chat_id: int) -> str:
-    mode = range.get(chat_id)
+    # range.get(chat_id) की बजाय langm.get(chat_id) का उपयोग करें
+    mode = langm.get(chat_id)  # सही डिक्शनरी का उपयोग करें
     if not mode:
         lang = await langdb.find_one({"chat_id": chat_id})
         if not lang:
@@ -337,6 +339,7 @@ async def get_lang(chat_id: int) -> str:
         langm[chat_id] = lang["lang"]
         return lang["lang"]
     return mode
+
 
 
 async def set_lang(chat_id: int, lang: str):
