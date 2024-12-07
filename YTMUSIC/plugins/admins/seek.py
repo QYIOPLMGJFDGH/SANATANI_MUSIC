@@ -5,7 +5,7 @@ from pyrogram.types import Message
 from config import BANNED_USERS
 from strings import command
 from YTMUSIC import Platform, app
-from YTMUSIC.core.call import Yukki
+from YTMUSIC.core.call import YT
 from YTMUSIC.misc import db
 from YTMUSIC.utils import AdminRightsCheck, seconds_to_min
 
