@@ -5,7 +5,7 @@ import config
 from config import BANNED_USERS
 from strings import command
 from YTMUSIC import Platform, app
-from YTMUSIC.core.call import Yukki
+from YTMUSIC.core.call import YT
 from YTMUSIC.misc import db
 from YTMUSIC.utils.database import get_loop
 from YTMUSIC.utils.decorators import AdminRightsCheck
