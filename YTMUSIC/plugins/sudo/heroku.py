@@ -27,18 +27,18 @@ from pyrogram.enums import ChatType
 import config
 from config import BANNED_USERS
 from strings import command
-from YukkiMusic import app
-from YukkiMusic.core.call import Yukki
-from YukkiMusic.misc import HAPP, SUDOERS, XCB, db
-from YukkiMusic.utils.database import (
+from YTMUSIC import app
+from YTMUSIC.core.call import Yukki
+from YTMUSIC.misc import HAPP, SUDOERS, XCB, db
+from YTMUSIC.utils.database import (
     get_active_chats,
     get_cmode,
     remove_active_chat,
     remove_active_video_chat,
 )
-from YukkiMusic.utils.decorators import AdminActual, language
-from YukkiMusic.utils.decorators.language import language
-from YukkiMusic.utils.pastebin import Yukkibin
+from YTMUSIC.utils.decorators import AdminActual, language
+from YTMUSIC.utils.decorators.language import language
+from YTMUSIC.utils.pastebin import YTBin
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
