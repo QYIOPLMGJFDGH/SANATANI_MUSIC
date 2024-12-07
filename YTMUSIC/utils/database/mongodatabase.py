@@ -329,16 +329,18 @@ async def set_playmode(chat_id: int, mode: str):
 
 
 async def get_lang(chat_id: int) -> str:
-    # range.get(chat_id) की बजाय langm.get(chat_id) का उपयोग करें
-    mode = langm.get(chat_id)  # सही डिक्शनरी का उपयोग करें
+    # langm.get(chat_id) से पहले langm एक डिक्शनरी होनी चाहिए
+    mode = langm.get(chat_id)
     if not mode:
-        lang = await langm.find_one({"chat_id": chat_id})
+        # MongoDB से डेटा प्राप्त करने के लिए langdb.find_one का उपयोग करें
+        lang = await langdb.find_one({"chat_id": chat_id})  # langdb एक डेटाबेस कनेक्शन होना चाहिए
         if not lang:
             langm[chat_id] = "en"
             return "en"
         langm[chat_id] = lang["lang"]
         return lang["lang"]
     return mode
+
 
 
 
