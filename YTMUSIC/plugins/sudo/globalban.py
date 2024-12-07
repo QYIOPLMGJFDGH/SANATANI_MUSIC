@@ -15,10 +15,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import command
-from YukkiMusic import app
-from YukkiMusic.misc import SUDOERS
-from YukkiMusic.utils import get_readable_time
-from YukkiMusic.utils.database import (
+from YTMUSIC import app
+from YTMUSIC.misc import SUDOERS
+from YTMUSIC.utils import get_readable_time
+from YTMUSIC.utils.database import (
     add_banned_user,
     get_banned_count,
     get_banned_users,
@@ -26,7 +26,7 @@ from YukkiMusic.utils.database import (
     is_banned_user,
     remove_banned_user,
 )
-from YukkiMusic.utils.decorators.language import language
+from YTMUSIC.utils.decorators.language import language
 
 
 @app.on_message(command("GBAN_COMMAND") & SUDOERS)
