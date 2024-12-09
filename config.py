@@ -13,10 +13,10 @@ API_ID = int(getenv("API_ID", "16457832"))
 API_HASH = getenv("API_HASH", "3030874d0befdb5d05597deacc3e83ab")
 # Get your token from @BotFather on Telegram.
 # ________________________________________________________________________________#
-BOT_TOKEN = getenv("BOT_TOKEN", "7532369778:AAEPCgsHwmbXntHn6xr0iqST9jx0EkXz8Xc")
+BOT_TOKEN = getenv("BOT_TOKEN", "")
 # ________________________________________________________________________________#
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Yash_607:Yash_607@cluster0.r3s9sbo.mongodb.net/?retryWrites=true&w=majority")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "")
 # ________________________________________________________________________________#
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 # ________________________________________________________________________________#
@@ -79,12 +79,12 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 
 # Get your pyrogram v2 session from @YT_STRING_ROBOT on Telegram
-STRING1 = getenv("STRING_SESSION", "BQD7IGgAXdPk-f_fQqDkvebAVZE_lADEe10Ho6X5ri91jYNt8rPwCFS8OY1T1Iy1YvJmIwN_ITNcrwP09pCg7GSw1JaMwFb8Y-47FKs7kLQJP_8b6ZSCO9W3EYQ8fBOWU12xg42nlUTn3o8Cg1ajMDlj-Lr9Al3r7op-XnMh5LFsSglUWn-dHxo8SZHDM6OWlFeJt_BqYkKrZMT9Ev5_-Y7cAtFoQEqNShQUcIl8kUhCDvsp11c-uFQd9WfxcsOpdWhfeaIhggp3LJyBCw88OOZ2jlOkc4tUcTs64LZgiz3Tai4B3cQEkfCDYDXqC_Z96TSutbOkYoCZPuYUZeYC_GMMIuoPNAAAAAHR7uM4AA")
+STRING1 = getenv("STRING_SESSION", "BQD7IGgAXdPk--47FKs7kLQJP_8b6ZSCO9W3EYQ8fBOWU12xg42nlUTn3o8Cg1ajMDlj-Lr9Al3r7op-XnMh5LFsSglUWn-dHxo8SZHDM6OWlFeJt_BqYkKrZMT9Ev5_-Y7cAtFoQEqNShQUcIl8kUhCDvsp11c-uFQd9WfxcsOpdWhfeaIhggp3LJyBCw88OOZ2jlOkc4tUcTs64LZgiz3Tai4B3cQEkfCDYDXqC_Z96TSutbOkYoCZPuYUZeYC_GMMIuoPNAAAAAHR7uM4AA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
-STRING_SESSIONS = list(map(str.strip, getenv("STRING_SESSIONS", "BQD7IGgAXdPk-f_fQqDkvebAVZE_lADEe10Ho6X5ri91jYNt8rPwCFS8OY1T1Iy1YvJmIwN_ITNcrwP09pCg7GSw1JaMwFb8Y-47FKs7kLQJP_8b6ZSCO9W3EYQ8fBOWU12xg42nlUTn3o8Cg1ajMDlj-Lr9Al3r7op-XnMh5LFsSglUWn-dHxo8SZHDM6OWlFeJt_BqYkKrZMT9Ev5_-Y7cAtFoQEqNShQUcIl8kUhCDvsp11c-uFQd9WfxcsOpdWhfeaIhggp3LJyBCw88OOZ2jlOkc4tUcTs64LZgiz3Tai4B3cQEkfCDYDXqC_Z96TSutbOkYoCZPuYUZeYC_GMMIuoPNAAAAAHR7uM4AA").split(",")))
+STRING_SESSIONS = list(map(str.strip, getenv("STRING_SESSIONS", "BQD7IGgAXdPk--47FKs7kLQJP_8b6ZSCO9W3EYQ8fBOWU12xg42nlUTn3o8Cg1ajMDlj-Lr9Al3r7op-XnMh5LFsSglUWn-dHxo8SZHDM6OWlFeJt_BqYkKrZMT9Ev5_-Y7cAtFoQEqNShQUcIl8kUhCDvsp11c-uFQd9WfxcsOpdWhfeaIhggp3LJyBCw88OOZ2jlOkc4tUcTs64LZgiz3Tai4B3cQEkfCDYDXqC_Z96TSutbOkYoCZPuYUZeYC_GMMIuoPNAAAAAHR7uM4AA").split(",")))
 
 
 
