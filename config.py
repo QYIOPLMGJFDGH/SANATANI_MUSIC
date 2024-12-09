@@ -43,7 +43,7 @@ PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", "False")
 # ________________________________________________________________________________#
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/QYIOPLMGJFDGH/SANATANI_MUSIC",
+    "https://github.com/BABY-MUSIC/SANATANI_MUSIC",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
